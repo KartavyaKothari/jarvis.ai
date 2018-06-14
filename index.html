@@ -11,7 +11,67 @@
     <title>JARVIS.AI</title>
 </head>
 <body>
-
+    <div class="container">
+        <div class="row" id="calculator">
+            <div class="col-lg-6">
+                <form>
+                    <div class="form-group">
+                      <label for="n1">Number 1:</label>
+                      <input type="number" class="form-control" id="n1">
+                    </div>
+                    <div class="form-group">
+                        <label for="op">Operation (MUL,DIV,SUB,ADD):</label>
+                        <input type="text" class="form-control" id="op">
+                      </div>
+                    <div class="form-group">
+                      <label for="n2">Number 2</label>
+                      <input type="number" class="form-control" id="n2">
+                    </div>
+                    <!-- <div class="checkbox">
+                      <label><input type="checkbox"> Remember me</label>
+                    </div> -->
+                  </form>
+                  <button type="submit" class="btn btn-default" onclick="calc()">AVENGE</button>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="answerPanel">
+                      Hi Tony:
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <form>
+                    <div class="form-group">
+                      <label for="item">Item name</label>
+                      <input type="text" class="form-control" id="item">
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="op">Operation (MUL,DIV,SUB,ADD):</label>
+                        <input type="text" class="form-control" id="op">
+                      </div>
+                    <div class="form-group">
+                      <label for="n2">Number 2</label>
+                      <input type="number" class="form-control" id="n2">
+                    </div> -->
+                    <!-- <div class="checkbox">
+                      <label><input type="checkbox"> Remember me</label>
+                    </div> -->
+                  </form>
+                  <button type="submit" class="btn btn-default" onclick="addItemToList()">Add</button><br><br>
+                  <button type="submit" class="btn btn-default" onclick="displayList()">What's my shopping Jarvis?</button>
+            </div>
+            <div class="col-lg-6">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="listPanel">
+                      Hi Tony:
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
